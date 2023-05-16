@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>uTask 3.0</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="darkmode.css" rel="stylesheet"/>
+        <link href="responsive.css" rel="stylesheet"/>
+        <script src="script.js" defer></script>
+        <script src="carousel.js" defer></script>     
+        <script src="api.js" defer></script>
+        <script src="dark-mode.js" defer></script>         
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="white" src="WhiteLogo.png" alt="Logo Branca do Site">
+                    <img class="blue" src="BlueLogo.png" alt="Logo Azul do Site">
+                </div>
+                <h1>uTask 3.0</h1>
+                <div>
+                    <input type="checkbox" id="change-theme" />
+                    <label for="change-theme">
+                        <i class="button">
+                            <i class="circle">
+                                <i class="material-icons" id="sun">light_mode</i>
+                                <i class="material-icons" id="moon">dark_mode</i>
+                            </i>
+                        </i>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="cards">
+                <div class="phrase">
+                    <button id="show-phrase-button">
+                        <i class="circle">
+                            <span>
+                                <i class="material-icons">tips_and_updates</i>
+                            </span>
+                        </i>
+                        <h2>Frase do dia</h2>
+                    </button>
+                    <div class="card">
+                        <div class="container">
+                            <i class="circle">
+                                <span>
+                                    <i class="material-icons">tips_and_updates</i>
+                                </span>
+                            </i>
+                            <div class="text">
+                                <h6>Frase do dia</h6>
+                                <p id="phrase-text">Carregando frase...</p>
+                            </div>
+                            <button class="close" id="close-phrase-button">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <button class="prev-button" id="mobile-prev-button">
+                            <i class="material-icons">navigate_before</i>
+                        </button>
+                        <div class="kanban">
+                            <div class="a-swiper">
+                                <div class="header">
+                                    <h2>A Fazer</h2>
+                                    <button id="add-task-button">
+                                        <i class="material-icons">add</i>
+                                    </button>
+                                </div>
+                                <div class="container"><ul class="a-list"></ul></div>
+                            </div>
+                            <div class="e-swiper">
+                                <h2 class="header">Em andamento</h2>
+                                <div class="container"><ul class="e-list"></ul></div>
+                                
+                            </div>
+                            <div class="f-swiper">
+                                <h2 class="header">Feito</h2>
+                                <div class="container"><ul class="f-list"></ul></div>
+                                
+                            </div>
+                        </div>
+                        <button class="next-button" id="mobile-next-button">
+                            <i class="material-icons">navigate_next</i>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination">
+                        <span class="pag" id="pag-1"></span>
+                        <span class="pag" id="pag-2"></span>
+                        <span class="pag" id="pag-3"></span>
+                    </div>
+                </div>
+            </section>    
+        </main>
+        <div class="modal">
+            <div class="container">
+                <h2>Nova Task</h2>
+                <hr>
+                <form>
+                    <p>Título*</p>
+                    <input type="text" required>
+                    <p>Descrição</p>
+                    <textarea class="text-description" type="text"></textarea>
+                    <button id="new-task-button" type="submit">Criar Task</button>
+                </form>
+                <button class="close" id="close-button">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                    <p>© Processo de Trainee <a href="https://unect.com.br/"><strong>Unect Jr.</strong></a> 2023.1</p> 
+                <div class="love">    
+                    <p>Feito com</p>
+                    <i class="material-icons">favorite</i>
+                    <p>por <a href="https://www.linkedin.com/in/rafael-duarte-daltio-bb98a922b/"><strong>Rafael Daltio</strong></a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

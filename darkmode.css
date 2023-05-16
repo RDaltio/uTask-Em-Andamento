@@ -1,0 +1,153 @@
+.dark, .dark main{
+    background: #222222;
+    color: #FAFAFA;
+}
+
+.dark header{
+    background: #333333;
+}
+
+.dark .logo .blue{
+    display: block;
+}
+
+.dark .logo .white{
+    display: none;
+}
+
+.dark header h1{
+    color: #3867D6;
+}
+
+.dark header .button{
+    background: linear-gradient(269.72deg, #222222 0.23%, #111111 0.24%, #2E2E2E 99.76%);
+}
+
+.dark header .button .circle{
+    background: #FAFAFA;
+    position: absolute;
+    left: none;
+    right: 2px;
+}
+
+.dark i #moon{
+    display: block;
+}
+
+.dark i #sun{
+    display: none;
+}
+
+.dark .phrase #show-phrase-button{
+    background: #3D3D3D;
+}
+
+.dark .phrase .container{
+    background: #3D3D3D;
+}
+
+.dark .phrase .circle{
+    background: #515151;
+}
+
+.dark .phrase .circle span{
+    background: #3D3D3D;
+}
+
+.dark .phrase .circle i{
+    color: #FFFFFF;
+}
+
+.dark .kanban::-webkit-scrollbar-thumb{
+    background: #515151;
+}
+
+.dark .pag{
+    background: #515151;
+}
+
+.dark .pag.on{
+    background: #226ED8;
+}
+
+.dark #add-task-button{
+    border: 2px solid #3867D6;
+}
+
+.dark #add-task-button i{
+    color: #3867D6;
+}
+
+.dark .kanban .container{
+    background: #333333;
+}
+
+.dark ul::-webkit-scrollbar-thumb{
+    background: #515151;
+}
+
+.dark li{
+    background: #3D3D3D;
+}
+
+.dark #remove-button{
+    color: #FFAFAF;
+}
+
+.dark #visible-button{
+    color: #FAFAFA;
+}
+
+.dark #hidden-button{
+    color: #5C9DFF;
+}
+
+.dark #back-button{
+    background: #3D3D3D;
+    border: 1px solid #226ED8;
+}
+
+.dark #back-button i{
+    color: #226ED8;
+}
+
+.dark #advance-button{
+    background: #226ED8;
+}
+
+.dark #advance-button i{
+    color: #3D3D3D;
+}
+
+.dark footer{
+    background: #111111;
+}
+
+.dark .modal .container{
+    background: #3D3D3D;
+}
+
+.dark .modal h2{
+    color: #226ED8;
+}
+
+.dark hr{
+    background: #226ED8;
+}
+
+.dark form{
+    color: #FAFAFA;
+}
+
+.dark input[type="text"], .dark textarea{
+    background: #333333;
+    color: #FAFAFA;
+}
+
+.dark #close-button{
+    border: 2px solid #226ED8;
+}
+
+.dark #close-button i{
+    color: #226ED8;
+}
